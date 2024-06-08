@@ -12,6 +12,7 @@ import { json } from "express"
 export {asyncHadler}
 
 
+ 0
 
 
 
@@ -22,16 +23,22 @@ export {asyncHadler}
 
 
 
-// using try catch block
+//  using try catch block
 
 // const asyncHadler=(fn)=>async (req,res,next)=>{
-//     try{
-//      await fn(req,res,next)
-//     }
-//     catch(error){
-//         res.status(err.code || 500),json({
-//             success:false,
-//             message:err.message
-//         })
-//     }
+     
+
+// 
+//
+
+
+// try{
+    //  await fn(req,res,next)
+    // }
+    // catch(error){
+      //  res.status(err.code || 500),json({
+            // success:false,
+            // message:err.message
+        //  })
+    // }
 // }
