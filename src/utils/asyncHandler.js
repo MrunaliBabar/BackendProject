@@ -1,6 +1,6 @@
 import { json } from "express"
- const asyncHadler=(requestHandler)=>{
-  (req,res,next)=>{
+ const asyncHandler=(requestHandler)=>{
+ return (req,res,next)=>{
     Promise.resolve(requestHandler(req, res, next)).
     
     catch((err)=>next(err))
@@ -9,7 +9,7 @@ import { json } from "express"
 
  }
 
-export {asyncHadler}
+export {asyncHandler}
 
 
  0
